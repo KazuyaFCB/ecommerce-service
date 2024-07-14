@@ -1,0 +1,18 @@
+{
+    "production": {
+        "name": "ECommerce API Gateway - Dev Mode",
+        "server": {
+            "host": "http://localhost",
+            "port": 8080
+        },
+        "database": {
+            "mongodb": {
+                "host": "ecommerce.yssxvcx.mongodb.net",
+                "port": 27017,
+                "name": "ecommerce",
+                "user": "hoangvinh175",
+                "password": "JVuWrb6s3RHzIljE"
+            }
+        }
+    }
+}
