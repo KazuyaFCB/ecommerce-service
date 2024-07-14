@@ -4,59 +4,59 @@ namespace ProductDTO {
     export class CreateProductRequest {
         @IsString()
         @IsNotEmpty()
-        product_name!: string;
+        productName!: string;
 
         @IsString()
         @IsNotEmpty()
-        product_thumb!: string;
+        productThumb!: string;
 
         @IsString()
         @IsNotEmpty()
-        product_description!: string;
+        productDescription!: string;
 
         @IsNumber()
         @IsNotEmpty()
-        product_price!: number;
+        productPrice!: number;
 
         @IsString()
         @IsNotEmpty()
-        product_type!: string;
+        productType!: string;
 
         @IsNumber()
         @IsNotEmpty()
-        product_quantity!: number;
+        productQuantity!: number;
 
         @IsOptional()
-        product_attributes: any;
+        productAttributes: any;
     }
 
     export class CreateProductResponse {
         @IsString()
         @IsNotEmpty()
-        product_name!: string;
+        productName!: string;
 
         @IsString()
         @IsNotEmpty()
-        product_thumb!: string;
+        productThumb!: string;
 
         @IsString()
         @IsNotEmpty()
-        product_description!: string;
+        productDescription!: string;
 
         @IsNumber()
         @IsNotEmpty()
-        product_price!: number;
+        productPrice!: number;
 
         @IsString()
         @IsNotEmpty()
-        product_type!: string;
+        productType!: string;
 
         @IsNumber()
         @IsNotEmpty()
-        product_quantity!: number;
+        productQuantity!: number;
 
         @IsOptional()
-        product_attributes!: any;
+        productAttributes!: any;
 
         @IsDate()
         @IsNotEmpty()
