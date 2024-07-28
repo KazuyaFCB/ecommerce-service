@@ -4,6 +4,7 @@ import { ServerException } from '../exception/ServerException';
 import { StatusCodes } from 'http-status-codes';
 
 export function errorHandler(err: Error, req: Request, res: Response, next: NextFunction) {
+    console.error('Error: ', err);
     if (err instanceof ApiException) {
         return res.status(err.status).json({
             code: err.code,

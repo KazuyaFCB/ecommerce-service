@@ -2,7 +2,7 @@ import { Schema, model, Document, Types } from 'mongoose';
 
 export interface IClothing extends Document {
     brand: string;
-    size: number;
+    size: string;
     material: string;
 }
 
@@ -12,7 +12,7 @@ const clothingSchema = new Schema<IClothing>({
         required: true,
     },
     size: {
-        type: Number,
+        type: String,
         readonly: true,
     },
     material: {

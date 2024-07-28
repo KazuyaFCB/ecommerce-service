@@ -1,41 +1,41 @@
 import { Schema, model, Document, Types } from 'mongoose';
 
 export interface IProduct extends Document {
-    product_name: string;
-    product_thumb: string;
-    product_description: string;
-    product_price: number;
-    product_type: string;
-    product_quantity: number;
-    product_attributes: Types.ObjectId;
+    productName: string;
+    productThumb: string;
+    productDescription: string;
+    productPrice: number;
+    productType: string;
+    productQuantity: number;
+    productAttributes: Types.ObjectId;
 }
 
 const productSchema = new Schema<IProduct>({
-    product_name: {
+    productName: {
         type: String,
         required: true,
     },
-    product_thumb: {
+    productThumb: {
         type: String,
         required: true,
     },
-    product_description: {
+    productDescription: {
         type: String,
         required: true,
     },
-    product_price: {
+    productPrice: {
         type: Number,
         required: true,
     },
-    product_type: {
+    productType: {
         type: String,
         required: true,
     },
-    product_quantity: {
+    productQuantity: {
         type: Number,
         required: true,
     },
-    product_attributes: {
+    productAttributes: {
         type: Schema.Types.ObjectId,
         required: true,
     },
